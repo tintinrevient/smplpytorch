@@ -8,8 +8,8 @@ The code is adapted from the [manopth](https://github.com/hassony2/manopth) repo
 
 <p align="center">
 <img src="assets/image.png" alt="smpl" width="300"/>
-<img src="assets/front.png" alt="densepose_front" width="300"/>
-<img src="assets/back.png" alt="densepose_back" width="300"/>
+<img src="assets/front.png" alt="densepose_front" width="250"/>
+<img src="assets/back.png" alt="densepose_back" width="250"/>
 </p>
 
 
