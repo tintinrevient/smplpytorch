@@ -8,6 +8,8 @@ The code is adapted from the [manopth](https://github.com/hassony2/manopth) repo
 
 <p align="center">
 <img src="assets/image.png" alt="smpl" width="300"/>
+<img src="assets/front.png" alt="densepose_front" width="300"/>
+<img src="assets/back.png" alt="densepose_back" width="300"/>
 </p>
 
 
@@ -38,6 +40,7 @@ The code is adapted from the [manopth](https://github.com/hassony2/manopth) repo
 Forward pass the randomly created pose and shape parameters from the SMPL layer and display the human body mesh and joints:
 
 `python demo.py`
+`python demo_densepose.py`
 
 ## Acknowledgements
 The code **largely** builds on the [manopth](https://github.com/hassony2/manopth) repository from [Yana Hasson](https://github.com/hassony2), which implements the [MANO](http://mano.is.tue.mpg.de) hand model [\[2\]](#references) layer.
@@ -65,3 +68,7 @@ If you find this code useful for your research, please cite the original [SMPL](
 \[1\] Matthew Loper, Naureen Mahmood, Javier Romero, Gerard Pons-Moll, and Michael J. Black, "SMPL: A Skinned Multi-Person Linear Model," SIGGRAPH Asia, 2015.
 
 \[2\] Javier Romero, Dimitrios Tzionas, and Michael J. Black, "Embodied Hands: Modeling and Capturing Hands and Bodies Together," SIGGRAPH Asia, 2017.
+
+\[3\] https://pytorch3d.org/tutorials/render_densepose
+
+\[4\] https://smpl.is.tue.mpg.de/en
