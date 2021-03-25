@@ -7,7 +7,7 @@ It can be integrated into any architecture as a differentiable layer to predict 
 The code is adapted from the [manopth](https://github.com/hassony2/manopth) repository by [Yana Hasson](https://github.com/hassony2).
 
 <p align="center">
-<img src="assets/image.png" alt="smpl" width="290"/>
+<img src="assets/image.png" alt="smpl" width="280"/>
 <img src="assets/front.png" alt="densepose_front" width="250"/>
 <img src="assets/back.png" alt="densepose_back" width="290"/>
 </p>
