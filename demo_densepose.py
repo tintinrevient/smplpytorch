@@ -39,7 +39,7 @@ data_filename = os.path.join(DATA_DIR, "DensePose/UV_Processed.mat")
 tex_filename = os.path.join(DATA_DIR,"DensePose/texture_from_SURREAL.png")
 
 # rename your .pkl file or change this string
-verts_filename = os.path.join(DATA_DIR, "DensePose/smpl_model.pkl")
+verts_filename = os.path.join('smplpytorch', 'native', 'models', "basicModel_neutral_lbs_10_207_0_v1.0.0.pkl")
 
 # load SMPL and texture data
 with open(verts_filename, 'rb') as f:
