@@ -7,7 +7,7 @@
 __pycache__/
 build/
 dist/
-data/*.pkl
+data/DensePose/*.pkl
 
 image.png
 smplpytorch/native/models/*.pkl
