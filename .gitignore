@@ -2,6 +2,10 @@
 *.bak
 *_bak.py
 
+.DS_Store
+
+.idea/
+
 .cache/
 .egg-info
 __pycache__/
