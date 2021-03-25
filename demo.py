@@ -8,15 +8,25 @@ if __name__ == '__main__':
     cuda = False
     batch_size = 1
 
-    # Create the SMPL layer
+    # create the SMPL layer
     smpl_layer = SMPL_Layer(
         center_idx=0,
         gender='neutral',
         model_root='smplpytorch/native/models')
 
-    # Generate random pose and shape parameters
-    pose_params = torch.rand(batch_size, 72) * 0.2
-    shape_params = torch.rand(batch_size, 10) * 0.03
+    # generate random pose and shape parameters
+
+    # poses
+    # pose_params = torch.rand(batch_size, 72) * 0.2 # normal
+    pose_params = torch.rand(batch_size, 72) * 0.001 # t-pose
+
+    # shapes
+    shape_params = torch.rand(batch_size, 10) * 0.03 # normal
+    # shape_params = torch.rand(batch_size, 10) * 0.001 # fatter
+    # shape_params = torch.rand(batch_size, 10) * 10 # skinnier
+
+    print('pose_params:', pose_params)
+    print('shape_params:', shape_params)
 
     # GPU mode
     if cuda:
@@ -24,10 +34,10 @@ if __name__ == '__main__':
         shape_params = shape_params.cuda()
         smpl_layer.cuda()
 
-    # Forward from the SMPL layer
+    # forward from the SMPL layer
     verts, Jtr = smpl_layer(pose_params, th_betas=shape_params)
 
-    # Draw output vertices and joints
+    # draw output vertices and joints
     display_model(
         {'verts': verts.cpu().detach(),
          'joints': Jtr.cpu().detach()},
